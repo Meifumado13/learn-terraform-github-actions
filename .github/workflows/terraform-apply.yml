@@ -6,9 +6,9 @@ on:
       - main
 
 env:
-  TF_CLOUD_ORGANIZATION: "BMPC"
-  TF_API_TOKEN: "${{ secrets.TF_API_TOKEN }}"
-  TF_WORKSPACE: "LizzoHarpoonProject"
+  TF_CLOUD_ORGANIZATION: "vladTFE1" 
+  TF_API_TOKEN: "${{ secrets.TF_API_TOKEN2 }}"
+  TF_WORKSPACE: vladTFEalpha"
   CONFIG_DIRECTORY: "./"
 
 jobs:
