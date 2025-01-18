@@ -6,7 +6,6 @@ provider "aws" {
 }
 
 #4
-
 terraform {
   required_providers {
     aws = {
@@ -21,10 +20,10 @@ terraform {
   required_version = ">= 1.1.0"
 
   cloud {
-    organization = "BMPC"
+    organization = "vladTFE1"
 
     workspaces {
-      name = "LizzoHarpoonProject"
+      name = "vladTFEalpha"
     }
   }
 }
@@ -44,6 +43,8 @@ data "aws_ami" "ubuntu" {
     name   = "virtualization-type"
     values = ["hvm"]
   }
+
+  owners = ["225989377145"] # Canonical
 
 }
 
